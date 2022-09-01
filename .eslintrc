@@ -1,0 +1,38 @@
+{
+    "plugins": ["jsdoc", "import"],
+    "extends": ["eslint:recommended", "plugin:jsdoc/recommended", "plugin:import/recommended"],
+    "rules": {
+        "array-callback-return": "warn",
+        "no-constant-binary-expression": "error",
+        "no-duplicate-imports": "warn",
+        "no-self-compare": "error",
+        "no-unmodified-loop-condition": "error",
+        "no-use-before-define": "error",
+        "camelcase": ["error", {
+            "properties": "always",
+            "ignoreDestructuring": true
+        }],
+        "eqeqeq": "error",
+        "no-else-return": "warn",
+        "no-magic-numbers": "warn",
+        "no-return-assign": "error",
+        "no-unneeded-ternary": "warn",
+        "no-var": "warn",
+        "prefer-const": "warn",
+        "spaced-comment": ["warn", "always"],
+        "key-spacing": "warn",
+        "jsdoc/check-indentation": 1,
+        "jsdoc/require-description": 1,
+        "import/extensions": ["error", {
+            "js": "always"
+        }]
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+    },
+    "env": {
+        "node": true,
+        "mocha": true
+    }
+}
